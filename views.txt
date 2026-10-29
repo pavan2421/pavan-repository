@@ -1,0 +1,29 @@
+views :
+
+views is an virtual table that displays the selected rows from the given table 
+
+creating a view :
+ create view viwe_name.
+
+
+
+cte.
+comman table expression.
+
+cte is a temporary result that we give name and use within the same query.
+
+syntax:
+with cte_name as(
+--- query
+)
+
+
+with highestsalaryemployes as
+(
+select e_id,e_fname,e_lname,salary 
+from employess where salary>40000
+)
+select * from highestsalaryemployes;
+
+
+
